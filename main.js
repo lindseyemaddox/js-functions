@@ -22,3 +22,14 @@ const nuggetizer = (animal) => {
 };
 
 console.log(nuggetizer('pig'));
+
+
+////////// CHALLENGE //////////
+
+// dogBreed with input string - boxer, output something like a sentence using using string
+
+const dogBreed = (boxer) => {
+  return `My favorite dog is ${boxer}.`;
+}
+
+console.log(dogBreed('Stella Beef the Biscuit Thief'));
