@@ -32,15 +32,26 @@ const dogBreed = (boxer) => {
   return `My favorite dog is ${boxer}.`;
 }
 
-console.log(dogBreed('Stella Beef the Biscuit Thief'));
+// console.log(dogBreed('Stella Beef the Biscuit Thief'));
 
 
 ////////// DOM //////////
 
 const dogBreedDiv = document.getElementById('dog-breeds');
-// console.log('dogBreedDiv', dogBreedDiv);    // pay attention to the two thingies here to avoid 'undefined'
+console.log('dogBreedDiv', dogBreedDiv);    // pay attention to the two thingies here to avoid 'undefined'
 
 dogBreedDiv.innerHTML = dogBreed('boxer');
 
-dogBreedDiv.innerHTML = nuggetizer('animal');
+const nugDiv = document.getElementById('nuggetizer');
 
+nugDiv.innerHTML = nuggetizer('animal');
+nugDiv.innerHTML += nuggetizer('octopus');
+
+const printToDom = (divId, textToPrint) => {
+  const selectedDiv = document.getElementById(divId);
+  selectedDiv.innerHTML += textToPrint;
+};
+
+printToDom('dog-breeds', dodBreeds('boxer'));
+printToDom('buggetizer', nuggetizer('bear'));
+printToDom('nuggetizer', 'mmmmmmmmmmmmm');
