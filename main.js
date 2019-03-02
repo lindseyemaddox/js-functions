@@ -13,3 +13,12 @@ const namePrinter = (firstName, lastName) => {
 
 namePrinter('Lindsey', 'Maddox');
 namePrinter('Azalea', 'Ruth');
+
+
+//////////  MEAT  //////////
+
+const nuggetizer = (animal) => {
+  return `processed ${animal}`;   // you can only do one return statement per function, to return two things you have to do an object
+};
+
+console.log(nuggetizer('pig'));
