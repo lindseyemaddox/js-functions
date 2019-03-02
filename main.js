@@ -33,3 +33,14 @@ const dogBreed = (boxer) => {
 }
 
 console.log(dogBreed('Stella Beef the Biscuit Thief'));
+
+
+////////// DOM //////////
+
+const dogBreedDiv = document.getElementById('dog-breeds');
+// console.log('dogBreedDiv', dogBreedDiv);    // pay attention to the two thingies here to avoid 'undefined'
+
+dogBreedDiv.innerHTML = dogBreed('boxer');
+
+dogBreedDiv.innerHTML = nuggetizer('animal');
+
